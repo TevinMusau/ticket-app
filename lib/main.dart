@@ -15,17 +15,14 @@ class MyApp extends StatelessWidget {
      * Material App is the base of a Flutter Application 
      */
 
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(),
-      
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       /* 
       * Scaffold is like a skeleton for the UI.
       * It holds everything together
       * Makes the UI colorful
       */
-
-      home: const BottomNavBar()
+      home: BottomNavBar()
     );
   }
 }
